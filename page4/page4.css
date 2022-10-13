@@ -1,0 +1,715 @@
+@import url("reset.css");
+/* *{
+    border: 1px solid black;
+    outline: 1px solid black;
+} */
+
+body {
+    background-color: #F4E8D4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper1 {
+    width: 100%;
+}
+
+/* -----------------這裡是主選單----------------- */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    flex-grow: 1;
+    align-items: center;
+    background-color: white;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu svg {
+    display: none;
+}
+
+/* -----------------這裡是左邊選單----------------- */
+
+.left_menu {
+    width: 33.33333%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left_menu li {
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+.left_menu a {
+    margin: 0 20px;
+}
+
+/* -----------------這裡是LOGO----------------- */
+
+.toplogo_a {
+    margin: 20px 0;
+}
+
+.toplogo_a img {
+    height: 70px;
+}
+
+/* -----------------這裡是右邊選單----------------- */
+
+.right_menu {
+    width: 33.33333%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.right_menu li {
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+.right_menu a {
+    margin: 0 20px;
+}
+
+/* -----------------這裡是放大鏡----------------- */
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search a {
+    margin-right: 0;
+}
+
+/* -----------------這裡是語言切換----------------- */
+
+.language a {
+    margin-right: 0;
+}
+
+/* -----------------這裡是箭頭----------------- */
+
+.magnifier {
+    height: 20px;
+}
+
+/* -----------------這裡是shop_title----------------- */
+
+.shop_title {
+    /* height: 120px; */
+    justify-content: center;
+    text-align: center;
+}
+
+.shop_title h1 {
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+.shop_title hr {
+    background-color: #F4C151;
+    height: 1px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.shop_title h3 {
+    word-spacing: 40px;
+    opacity: 50%;
+}
+
+/* -----------------這裡是shop_left+middle----------------- */
+
+.left_and_middle {
+    display: flex;
+    width: 1340px;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* -----------------這裡是shop_nav----------------- */
+
+.shop_left {
+    width: 230px;
+}
+
+.shop_left li {
+    margin-bottom: 50px;
+    background-color: #F2D8B3;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 60px;
+    text-align: center;
+    margin: 40px;
+    margin-top: 0;
+}
+
+.shop_left a {
+    font-size: 20px;
+}
+
+/* ==============這裡是shop_middle================ */
+
+
+
+.shop_middle ul {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.shop_middle li {
+
+    margin-right: 50px;
+    text-align: center;
+    margin: 0 40px;
+    position: relative;
+}
+
+.shop_middle h1 {
+    margin: 20px 0;
+}
+
+.shop_middle img {
+    height: 300px;
+}
+
+.shop_middle .shop_car {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 89%;
+    left: 82%;
+}
+
+/* ==============這裡是shop_page================ */
+
+.shop_page {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.shop_page img {
+    width: 100px;
+    height: 60px;
+
+}
+
+.shop_page button {
+    position: relative;
+    bottom: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    border: 1px solid #F4C151;
+    background-color: #F4E8D4;
+    color: #E89E67;
+
+}
+
+
+/* -----------------這裡是footer----------------- */
+
+footer {
+    width: 100%;
+    height: 475px;
+    position: relative;
+    background-image: url("footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.footer_aqur {
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+}
+
+/* -----------------這裡是footer inner----------------- */
+
+.footer_inner {
+    width: 1000px;
+    height: 285px;
+    position: relative;
+    margin: 0 auto;
+    top: 40%;
+}
+
+/* -----------------這裡是footer left----------------- */
+
+.footer_left {
+    width: 240px;
+    height: 250px;
+    position: absolute;
+    right: 80%;
+
+}
+
+.footer_left img {
+    width: 130px;
+    height: 157px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+.footer_left h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.footer_left input {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 230px;
+    font-size: 20px;
+    border: 2px solid #F4C151;
+    background-color: #F4E8D4;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* -----------------這裡是footer mid----------------- */
+
+.footer_mid {
+    position: absolute;
+    bottom: 36%;
+    left: 25%;
+    width: 665px;
+    height: 100px;
+    letter-spacing: 3px;
+
+}
+
+.footer_mid ul {
+    display: flex;
+
+}
+
+.footer_mid li {
+    margin-right: 90px;
+    font-size: 18px;
+
+}
+
+.footer_mid h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer_mid h2 {
+    margin-bottom: 20px;
+}
+
+/* -----------------這裡是footer right----------------- */
+
+.footer_right {
+    height: 80px;
+    width: 120px;
+    justify-content: center;
+    position: absolute;
+    bottom: 45%;
+    right: 0;
+}
+
+.footer_right h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* -----------------這裡是fb google ig----------------- */
+.footer_right svg {
+    margin-right: 10px;
+
+}
+
+/* -----------------這裡是footer last----------------- */
+
+.footer_last {
+    width: 100%;
+}
+
+.footer_last button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    line-height: 45px;
+    position: absolute;
+    right: 2px;
+    bottom: 5%;
+    background-color: #F4E8D4;
+    border: 2px solid #F4C151;
+}
+
+.footer_last h1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+@media screen and (max-width:415px) {
+
+    /* ====================主選單 ==================== */
+
+    .menu {
+        width: 100vw;
+        height: 50px;
+        flex: none;
+        justify-content: unset;
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 80%;
+    }
+
+    /* ========== 漢堡線 ========== */
+
+    .menu svg {
+        display: block;
+    }
+
+    /* LOGO */
+
+    .toplogo_a {
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 180px;
+    }
+
+    .toplogo_a img {
+        height: 50px;
+    }
+
+    /* ========== 左選單 ========== */
+
+    .left_menu {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        background-color: rgb(162, 190, 235);
+        display: none;
+    }
+
+    .left_menu ul {
+        flex-direction: column;
+    }
+
+    .left_menu li {
+        height: 50px;
+    }
+
+    .left_menu a {
+        display: block;
+        margin: 0;
+        line-height: 50px;
+        font-size: 16px;
+    }
+
+    /* ========== 右選單 ==========*/
+
+    .right_menu {
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        background-color: rgb(162, 190, 235);
+        margin: 0;
+        display: none;
+    }
+
+    .right_menu img {
+        display: none;
+    }
+
+    .right_menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right_menu li {
+        height: 50px;
+    }
+
+    .right_menu a {
+        display: block;
+        font-size: 16px;
+        margin: 0;
+        line-height: 50px;
+    }
+
+    /* -----------------這裡是shop_title----------------- */
+
+    .shop_title {
+        /* height: 120px; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .shop_title h1 {
+        font-size: 24px;
+        margin:0;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+
+    .shop_title hr {
+        background-color: #F4C151;
+        height: 1px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .shop_title h3 {
+        word-spacing: 10px;
+        opacity: 50%;
+        display: block;
+        font-size: 12px;
+    }
+
+    /* ========== shop_left+middle ==========*/
+
+    .left_and_middle {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* ========== shop_left ==========*/
+
+    .shop_menu{
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .shop_left {
+        width: auto;
+    }
+
+    .shop_left ul{
+        display: flex;
+        
+    }
+
+    .shop_left li {
+        flex-grow: 1;
+        width: 50px;
+        height: 20px;
+        line-height: 15px;
+        border-radius: 20px;
+        margin:0;
+        margin-bottom: 20px;
+    }
+
+    .shop_left a {
+        font-size: 12px;
+    }
+    
+    /* ========== shop_middle ==========*/
+
+    .shop_middle ul {
+        margin-bottom: 20px;
+    }
+
+    .shop_middle li {
+        position: relative;
+        flex-grow: 1;
+        text-align: center;
+        margin: 0 10px;
+        margin-bottom: 10px;
+    }
+    
+    .shop_middle img {
+        height: 150px;
+    }
+
+    .shop_middle h1 {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .shop_middle h2 {
+        font-size: 12px;
+    }
+
+    .shop_middle .shop_car {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 80%;
+        left: 70%;
+    }
+
+    .shop_middle li:nth-child(3){
+        display: none;
+    }
+
+    /* ==============這裡是shop_page================ */
+
+    .shop_page {
+        width: auto;
+        height: auto;
+        position: unset;
+    }
+
+    .shop_page img {
+        width: auto;
+        height: 40px;
+    }
+
+    .shop_page button {
+        bottom: 15px;
+        width: 22px;
+        height: 22px;
+        border-radius: 22px;
+    }
+
+     /* ==============這裡是footer================ */
+
+    footer {
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+    .footer_aqur {
+        width: 40px;
+        position: absolute;
+        bottom: 40px;
+    }
+
+    /* ========== footer inner ========== */
+
+    .footer_inner {
+        width: 100%;
+        height: 155px;
+        margin-top: 10px;
+    }
+
+    /* ========== footer left ========== */
+
+    .footer_left {
+        width: 150px;
+        height: auto;
+        margin: 0;
+        position: relative;
+        left: 0;
+    }
+
+    .footer_left img {
+        width: 40px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .footer_left h1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .footer_left input {
+        width: 100px;
+        height: 20px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* ========== footer middle ========== */
+
+    .footer_mid h2,h3 {
+        display: none;
+    }
+
+    .footer_mid {
+        width: 110px;
+        height: auto;
+        margin-left: 20px;
+        position: relative;
+        bottom: 77px;
+        left: 38vw;
+    }
+
+    .footer_mid ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_mid h1 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .footer_mid li {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    /* ========== footer_right ========== */
+
+    .footer_right {
+        width: auto;
+        height: auto;
+        top: 60px;
+        right: 45px;
+    }
+
+    .footer_right h1 {
+        font-size: 16px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    .footer_right svg {
+        width: 16px;
+        margin-right: 4px;
+    }
+
+    /* ========== footer_last ========== */
+
+    .footer_last {
+        width: auto;
+    }
+
+    .footer_last button {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 35px;
+        position: absolute;
+        right: 5px;
+    }
+
+    .footer_last h1 {
+        padding: 0 10px;
+        position: absolute;
+        font-size: 12px;
+        bottom: -85px;
+        text-align: center;
+    }
+}

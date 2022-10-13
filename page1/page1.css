@@ -1,0 +1,809 @@
+@import url("reset.css");
+/* *{
+    border: 1px solid black;
+    outline: 1px solid black;
+} */
+
+body{
+    background-color: #F4E8D4;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.wrapper1 {
+    width: 100%;
+}
+
+/* -----------------這裡是主選單----------------- */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    flex-grow: 1; 
+    align-items: center;
+    background-color: white;
+}
+
+.menu ul{
+    display: flex;
+}
+
+
+.menu svg{
+    display: none;
+}
+
+/* -----------------這裡是左邊選單----------------- */
+
+.left_menu{
+    width: 33.33333%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left_menu li{
+    flex-grow: 1;
+    font-size: 25px; 
+}
+
+.left_menu a{
+    margin: 0 20px;
+}
+
+/* -----------------這裡是LOGO----------------- */
+
+.toplogo_a{
+    margin: 20px 0;
+}
+
+.toplogo_a img {
+    height: 70px;
+}
+
+/* -----------------這裡是右邊選單----------------- */
+
+.right_menu{
+    width: 33.33333%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.right_menu li{
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+.right_menu a{
+    margin: 0 20px;
+}
+
+/* -----------------這裡是放大鏡----------------- */
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search a{
+    margin-right: 0;
+}
+
+/* -----------------這裡是語言切換----------------- */
+
+.language a{
+    margin-right: 0;
+}
+
+/* -----------------這裡是箭頭----------------- */
+
+.magnifier{
+    height: 20px;
+}
+
+/* -----------------這裡是banner1----------------- */
+
+.banner1{
+    width: 100%;
+ } 
+
+.banner1 img{
+    width: 100%;
+ } 
+
+/* -----------------這裡是banner2----------------- */
+
+.banner2{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.banner2 h1{
+    text-align: center;
+    font-size: 58px;
+    margin: 60px;
+}
+
+.banner2 ul{
+    display: flex;
+    justify-content: center;
+}
+
+.banner2 li{
+    margin: 0 70px;
+}
+
+.banner2 h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #D8BE9A;
+    margin-top: -2px;
+}
+
+.banner2 h4{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* -----------------這裡是banner3----------------- */
+
+.banner3{
+    background-image: url("banner3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height:500px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+.banner3_pic1{
+    width: 183px;
+    height: 186px;
+    position: absolute;
+    bottom: 70%;
+}
+
+.banner3_pic2{
+    width: 152px;
+    height: 300px;
+    position: absolute;
+    top: 65%;
+    
+}
+.banner3_pic3{
+    width: 136px;
+    height: 200px;
+    position: absolute;
+    right: 5%;
+    bottom: 70%;  
+}
+
+.banner3_text{
+    width: 420px;
+    height: 150px;
+    margin: 0 auto;
+    padding-right: 28%;
+}
+
+.banner3_text h1{
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 5px;
+    opacity: 30%;
+    letter-spacing: 5px;
+}
+
+.banner3_text h2{
+    font-size: 35px;
+    letter-spacing: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    
+}
+
+.banner3_text p{
+    width: 400px;
+    line-height: 1.3;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* -----------------這裡是banner4----------------- */
+
+.banner4{
+    height: 800px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+}
+
+.banner4_pic1{
+    width: 257px;
+    position: absolute;
+    right: 83%;
+    bottom: 80%;
+}
+
+.banner4_pic2{
+    width: 327px;
+    position: absolute;
+    left: 80%;
+    bottom:80%
+}
+
+.banner4_pic3{
+    position: absolute;
+    top: 8%;
+    left: 22%;
+}
+
+.banner4 h1{
+    font-size: 58px;
+    line-height: 1.3;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.banner4 ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.banner4 li{
+    margin: 0 70px;
+    text-align: center;
+}
+
+.banner4 h2{
+    font-size: 25px;
+    line-height: 1.5;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #D8BE9A;
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+
+.banner4 h3{
+    font-size: 25px;
+}
+
+/* -----------------這裡是banner5----------------- */
+
+.banner5{
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+}
+
+.banner5_text{
+    position: absolute;
+    left: 60%;
+    top:20%;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.banner5_text h1{
+    font-size: 58px;
+    margin-bottom: 30px;
+}
+
+.banner5_text h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.banner5_text p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    width: 400px;    
+}
+
+.banner5_text button{
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #F9F1C0;
+    border: 2px solid #F4C151;
+    width: 120px;
+    height: 35px;
+}
+
+.banner5_leaf{
+    position: absolute;
+    bottom:15%;
+    right:5%;
+    width: 500px;
+}
+
+/* -----------------這裡是footer----------------- */
+
+footer{
+    width: 100%;
+    height: 475px;
+    position: relative;
+    background-image: url("footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_aqur{
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+}
+
+/* -----------------這裡是footer inner----------------- */
+
+.footer_inner{
+    width: 1000px;
+    height: 285px;
+    position: relative;
+    margin: 0 auto;
+    top: 40%;
+}
+
+/* -----------------這裡是footer left----------------- */
+
+.footer_left{
+    width: 240px;
+    height: 250px;
+    position: absolute;
+    right: 80%;
+}
+
+.footer_left img{
+    width: 130px;
+    height: 157px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.footer_left h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.footer_left input{
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 230px;
+    font-size: 20px;
+    border: 2px solid #F4C151;
+    background-color:#F4E8D4;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* -----------------這裡是footer mid----------------- */
+
+.footer_mid{
+    position: absolute;
+    bottom: 36%;
+    left: 25%;
+    width: 665px;
+    height: 100px;
+    letter-spacing: 3px;
+}
+
+.footer_mid ul{
+    display: flex;
+}
+
+.footer_mid li{
+    margin-right: 90px;
+    font-size: 18px;
+}
+
+.footer_mid h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer_mid h2{
+    margin-bottom: 20px;
+}
+
+/* -----------------這裡是footer right----------------- */
+
+.footer_right{
+    height: 80px;
+    width: 120px;
+    justify-content: center;
+    position: absolute;
+    bottom: 45%;
+    right: 0;
+}
+
+.footer_right h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+/* -----------------這裡是fb google ig----------------- */
+.footer_right svg{
+    margin-right: 10px;
+    
+}
+
+/* -----------------這裡是footer last----------------- */
+
+.footer_last{
+    width: 100%;
+}
+
+.footer_last button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 45px;
+    position: absolute;
+    right: 2px;
+    bottom: 5%;
+    background-color: #F4E8D4;
+    border: 2px solid #F4C151;
+}
+
+.footer_last h1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/* ==================== 手機介面 ==================== */
+
+
+
+@media screen and (max-width:415px){
+    
+    /* ========== 主選單 ========== */
+
+    .menu{
+        width: 100vw;
+        height: 50px;
+        flex: none;
+        justify-content: unset;
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 80%;
+    }
+
+    /* ========== 漢堡線 ========== */
+
+    .menu svg{
+        display: block;
+    }
+
+    /* LOGO */
+    .toplogo_a {
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 180px;
+    }
+
+    .toplogo_a img{
+        height: 50px;
+    }
+
+    /* ========== 左選單 ========== */
+
+
+    
+    .left_menu{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        background-color: rgb(162, 190, 235);
+        display: none;
+    }
+
+    .left_menu ul{
+        flex-direction: column;
+    }
+
+    .left_menu li{
+        height: 50px;
+    }
+
+    .left_menu a{
+        display: block;
+        margin: 0;
+        line-height: 50px;
+        font-size: 16px;
+    }
+
+    /* ========== 右選單 ==========*/
+
+    .right_menu{
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        background-color: rgb(162, 190, 235);
+        margin: 0;
+        display: none;
+    }
+
+    .right_menu img{
+        display: none;
+    }
+
+    .right_menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right_menu li{
+        height: 50px;
+    }
+
+    .right_menu a{
+        display: block;
+        font-size: 16px;
+        margin: 0;
+        line-height: 50px;
+    }
+
+    /* ========== banner1 ==========*/
+
+    .banner1 img{
+        margin-top: 50px;
+    }
+
+    /* ========== banner2 ==========*/
+
+    .banner2{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .banner2 h1{
+        font-size: 25px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner2 li:nth-child(2){
+        display: none;
+    }
+
+    .banner2 li{
+        margin: 0 25px;
+    }
+
+    .banner2 img{
+        width: 150px;        
+    }
+
+    .banner2 h3{
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+
+    .banner2 h4{
+        text-align: center;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    /* ========== banner3 & banner4 ==========*/
+
+    .banner3{
+        display: none;
+    }
+
+    .banner4{
+        display: none;
+    }
+
+    /* ========== banner5 ==========*/
+
+    .banner5{
+        width: 100%;
+        position: unset;
+        height: auto;
+        margin-top: 50px;
+    }
+    
+    .banner5_book{
+        width: auto;
+        height: 200px;
+        margin-left: 20px;
+        
+    }
+    .banner5_leaf{
+        /* width: auto;
+        height: 150px;
+        position: absolute;
+        right: 20px;
+        bottom: 0; */
+        display: none;
+    }
+
+    .banner5_text{
+        width: auto;
+        position: unset;
+        margin: 0;
+        margin-right: 20px;
+        float: right;
+    }
+    
+    .banner5_text h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .banner5_text h2{
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .banner5_text p{
+        font-size: 12px;
+        width: 150px;
+        height: 125px;
+        margin: 0 auto;
+        overflow: auto;
+    }
+    
+    .banner5_text button{
+        display: none;
+    }
+
+     /* ========== footer ==========*/
+
+     footer{
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+    .footer_aqur{
+        width: 40px;
+        position: absolute;
+        bottom: 40px;
+    }
+
+    /* ========== footer inner ========== */
+    
+    .footer_inner{
+       width: 100%;
+       height: 155px;
+    }
+
+    /* ========== footer left ========== */
+     
+    .footer_left{
+        width: 150px;
+        height: auto;
+        margin: 0;
+        position: relative;
+        left: 0;
+    }
+
+    .footer_left img{
+        width: 40px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .footer_left h1{
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .footer_left input{
+        width: 100px;
+        height: 20px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* ========== footer middle ========== */
+
+    .footer_mid h2,h3{
+        display: none;
+    }
+
+    .footer_mid{
+        width: 110px;
+        height: auto;
+        margin-left: 20px;
+        position:relative;
+        bottom: 77px;
+        left: 38vw;
+    }
+
+    .footer_mid ul{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .footer_mid h1{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    
+
+    .footer_mid li{
+        width: auto;
+        margin-right: 20px;
+    }
+
+    /* ========== footer_right ========== */
+
+    .footer_right{
+        width: auto;
+        height: auto;
+        top: 60px;
+        right: 45px;
+    }
+
+    .footer_right h1{
+        font-size: 16px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    .footer_right svg{
+        width: 16px;
+        margin-right: 4px;
+    }
+
+    /* ========== footer_last ========== */
+
+    .footer_last{
+        width: auto;
+    }
+
+    .footer_last button{
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 35px;
+        position: absolute;
+        right: 5px;
+    }
+
+    .footer_last h1{
+        padding: 0 10px;
+        position: absolute;
+        font-size: 12px;
+        bottom: -85px;
+        text-align: center;
+    }
+
+}

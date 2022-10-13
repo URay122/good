@@ -1,0 +1,820 @@
+@import url("reset.css");
+/* *{
+    border: 1px solid black;
+    outline: 1px solid black;
+} */
+
+body {
+    background-color: #F4E8D4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper1 {
+    width: 100%;
+}
+
+/* -----------------這裡是主選單----------------- */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    flex-grow: 1;
+    align-items: center;
+    background-color: white;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu svg {
+    display: none;
+}
+
+/* -----------------這裡是左邊選單----------------- */
+
+.left_menu {
+    width: 33.33333%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left_menu li {
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+.left_menu a {
+    margin: 0 20px;
+}
+
+/* -----------------這裡是LOGO----------------- */
+
+.toplogo_a {
+    margin: 20px 0;
+}
+
+.toplogo_a img {
+    height: 70px;
+}
+
+/* -----------------這裡是右邊選單----------------- */
+
+.right_menu {
+    width: 33.33333%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.right_menu li {
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+.right_menu a {
+    margin: 0 20px;
+}
+
+/* -----------------這裡是放大鏡----------------- */
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search a {
+    margin-right: 0;
+}
+
+/* -----------------這裡是語言切換----------------- */
+
+.language a {
+    margin-right: 0;
+}
+
+/* -----------------這裡是箭頭----------------- */
+
+.magnifier {
+    height: 20px;
+}
+
+/* -----------------這裡是shopping_title----------------- */
+
+.shopping_title {
+    justify-content: center;
+    text-align: center;
+}
+
+.shopping_title h1 {
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+.shopping_title hr {
+    background-color: #F4C151;
+    height: 1px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+/* -----------------這裡是shopping_top----------------- */
+
+.shopping_top {
+    width: 100%;
+}
+
+.shopping_top ul {
+    display: flex;
+    width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.shopping_top li {
+    margin: 0 80px;
+    width: 50px;
+}
+
+/* -----------------這裡是shopping_pro1----------------- */
+
+.shopping_pro1 {
+    width: 100%;
+}
+
+.shopping_pro1 img {
+    width: 150px;
+}
+
+.shopping_pro1 ul {
+    display: flex;
+    width: 1010px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.shopping_pro1 li {
+    width: 100px;
+}
+
+/* -----------------這裡是shopping_pro1 ul的子層----------------- */
+
+.shopping_pro1 li:nth-child(2) {
+    position: absolute;
+    top: 47%;
+    left: 25%;
+}
+
+.shopping_pro1 li:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 45.5%;
+}
+
+.shopping_pro1 li:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    left: 67.5%;
+}
+
+.shopping_pro1 li:nth-child(5) {
+    position: absolute;
+    top: 50%;
+    left: 87.5%;
+}
+
+.shopping_pro1 li:nth-last-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 100%
+}
+
+/* -----------------這裡是shopping_pro1----------------- */
+
+.shopping_pro1 img {
+    margin-right: 70px;
+}
+
+.shopping_pro1 h1 {
+    margin-bottom: 20px;
+}
+
+.shopping_pro1 h2 {
+    padding-left: 5px;
+}
+
+.shopping_button1 {
+    display: flex;
+    text-align: center;
+}
+
+.shopping_pro1 button {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #F4C151;
+    color: #F4C151;
+    font-size: 15px;
+    border-radius: 22px;
+    padding-left: 5px;
+    padding-top: 1px;
+    opacity: 50%;
+
+}
+
+.shopping_button1 h1 {
+    margin: 0 10px;
+}
+
+.shopping_pro1 .last_button {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+}
+
+.line {
+    width: 750px;
+    height: 1px;
+    border-top: 2px solid #F4C151;
+    margin-left: 22%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* -----------------這裡是shopping_middle----------------- */
+
+.shopping_middle {
+    position: relative;
+    margin: 0 auto;
+    width: 1010px;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.shopping_middle2 {
+    position: absolute;
+    top: 0;
+    right: 6.5%;
+}
+
+.shopping_middle h1 {
+    width: 100px;
+    text-align: right;
+    margin-right: 160px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.shopping_middle h2 {
+    padding-left: 0;
+}
+
+.sum {
+    display: flex;
+    right: 20%;
+}
+
+.fee {
+    display: flex;
+}
+
+.all_sum {
+    display: flex;
+    height: 30px;
+}
+
+.all_sum h2 {
+    border-bottom: 2px solid black;
+    height: 20px;
+}
+
+/* -----------------這裡是shopping_bottom----------------- */
+
+.shopping_bottom {
+    width: 560px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #F4C151;
+    display: flex;
+}
+
+/* -----------------這裡是shopping_bottom_left----------------- */
+
+.shopping_bottom_left {
+    font-size: 16px;
+    width: 250px;
+    margin-top: 40px;
+    text-align: left;
+    line-height: 80px;
+}
+
+.shopping_bottom_left h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.shopping_bottom_left h2 {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.shopping_bottom_left h3 {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.shopping_bottom_left h4 {
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* -----------------這裡是shopping_bottom_right----------------- */
+
+.shopping_bottom_right {
+    width: 250px;
+    text-align: center;
+    margin-top: 65px;
+    line-height: 35px;
+}
+
+.shopping_bottom_right h1 {
+    font-size: 25px;
+}
+
+.shopping_bottom_right input {
+    width: 170px;
+    border-radius: 170px;
+    border: 1px solid #F4C151;
+}
+
+.shopping_bottom_right h5 input {
+    width: 10px;
+}
+
+/* -----------------這裡是結帳按鈕----------------- */
+
+.last_button2 {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 200px;
+}
+
+.last_button2 {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #F4C151;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #F9F1C0;
+}
+
+/* -----------------這裡是footer----------------- */
+
+footer {
+    width: 100%;
+    height: 475px;
+    position: relative;
+    background-image: url("footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.footer_aqur {
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+}
+
+/* -----------------這裡是footer inner----------------- */
+
+.footer_inner {
+    width: 1000px;
+    height: 285px;
+    position: relative;
+    margin: 0 auto;
+    top: 40%;
+}
+
+/* -----------------這裡是footer left----------------- */
+
+.footer_left {
+    width: 240px;
+    height: 250px;
+    position: absolute;
+    right: 80%;
+
+}
+
+.footer_left img {
+    width: 130px;
+    height: 157px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+.footer_left h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.footer_left input {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 230px;
+    font-size: 20px;
+    border: 2px solid #F4C151;
+    background-color: #F4E8D4;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* -----------------這裡是footer mid----------------- */
+
+.footer_mid {
+    position: absolute;
+    bottom: 36%;
+    left: 25%;
+    width: 665px;
+    height: 100px;
+    letter-spacing: 3px;
+
+}
+
+.footer_mid ul {
+    display: flex;
+
+}
+
+.footer_mid li {
+    margin-right: 90px;
+    font-size: 18px;
+
+}
+
+.footer_mid h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer_mid h2 {
+    margin-bottom: 20px;
+}
+
+/* -----------------這裡是footer right----------------- */
+
+.footer_right {
+    height: 80px;
+    width: 120px;
+    justify-content: center;
+    position: absolute;
+    bottom: 45%;
+    right: 0;
+}
+
+.footer_right h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* -----------------這裡是fb google ig----------------- */
+.footer_right svg {
+    margin-right: 10px;
+
+}
+
+/* -----------------這裡是footer last----------------- */
+
+.footer_last {
+    width: 100%;
+}
+
+.footer_last button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    line-height: 45px;
+    position: absolute;
+    right: 2px;
+    bottom: 5%;
+    background-color: #F4E8D4;
+    border: 2px solid #F4C151;
+}
+
+.footer_last h1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+@media screen and (max-width:415px) {
+
+    /* ====================主選單 ==================== */
+
+    .menu {
+        width: 100vw;
+        height: 50px;
+        flex: none;
+        justify-content: unset;
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 80%;
+    }
+
+    /* ========== 漢堡線 ========== */
+
+    .menu svg {
+        display: block;
+    }
+
+    /* LOGO */
+
+    .toplogo_a {
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 180px;
+    }
+
+    .toplogo_a img {
+        height: 50px;
+    }
+
+    /* ========== 左選單 ========== */
+
+    .left_menu {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        background-color: rgb(162, 190, 235);
+        display: none;
+    }
+
+    .left_menu ul {
+        flex-direction: column;
+    }
+
+    .left_menu li {
+        height: 50px;
+    }
+
+    .left_menu a {
+        display: block;
+        margin: 0;
+        line-height: 50px;
+        font-size: 16px;
+    }
+
+    /* ========== 右選單 ==========*/
+
+    .right_menu {
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        background-color: rgb(162, 190, 235);
+        margin: 0;
+        display: none;
+    }
+
+    .right_menu img {
+        display: none;
+    }
+
+    .right_menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right_menu li {
+        height: 50px;
+    }
+
+    .right_menu a {
+        display: block;
+        font-size: 16px;
+        margin: 0;
+        line-height: 50px;
+    }
+
+    /* ========== shopping_title ==========*/
+
+    .shopping_title {
+        margin-top: 70px;
+    }
+
+    .shopping_title h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .shopping_title hr {
+        margin-bottom: 20px;
+    }
+
+    /* ========== shopping_top ==========*/
+
+    .shopping_top,.shopping_pro1{  
+        display: none;
+        
+    }
+
+   
+    /* ========== shopping_bottom ==========*/
+    .shopping_bottom{
+        width: 80%;
+        height: auto;
+
+    }
+
+
+    /* ========== shopping_bottom_left ==========*/
+
+    .shopping_bottom_left {
+        font-size: 16px;
+        width: auto;
+        margin:0 20px;
+        line-height: 80px;
+    }
+
+
+
+    .shopping_bottom_left h3 {
+        display: block;
+    }
+
+    .shopping_bottom_right {
+        width: auto;
+        margin-top: 20px;
+        line-height: 40px;
+    }
+
+    .shopping_bottom_right h3{
+        display: block;
+    }
+
+
+
+
+
+
+    .last_button2 {
+        width: 70px;
+        height: 30px;
+    }
+    .last_button2 {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+
+
+
+    /* ========== footer ==========*/
+
+    footer {
+        width: 100%;
+        height: 100px;
+        position: relative;
+
+
+
+
+        /* display: none; */
+
+
+
+
+    }
+
+    .footer_aqur {
+        width: 40px;
+        position: absolute;
+        bottom: 40px;
+    }
+
+    /* ========== footer inner ========== */
+
+    .footer_inner {
+        width: 100%;
+        height: 155px;
+    }
+
+    /* ========== footer left ========== */
+
+    .footer_left {
+        width: 150px;
+        height: auto;
+        margin: 0;
+        position: relative;
+        left: 0;
+    }
+
+    .footer_left img {
+        width: 40px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .footer_left h1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .footer_left input {
+        width: 100px;
+        height: 20px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* ========== footer middle ========== */
+
+    .footer_mid h2,h3 {
+        display: none;
+    }
+
+    .footer_mid {
+        width: 110px;
+        height: auto;
+        margin-left: 20px;
+        position: relative;
+        bottom: 77px;
+        left: 38vw;
+    }
+
+    .footer_mid ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_mid h1 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .footer_mid li {
+        width: auto;
+        margin-right: 20px;
+    }
+
+    /* ========== footer_right ========== */
+
+    .footer_right {
+        width: auto;
+        height: auto;
+        top: 60px;
+        right: 45px;
+    }
+
+    .footer_right h1 {
+        font-size: 16px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    .footer_right svg {
+        width: 16px;
+        margin-right: 4px;
+    }
+
+    /* ========== footer_last ========== */
+
+    .footer_last {
+        width: auto;
+    }
+
+    .footer_last button {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 35px;
+        position: absolute;
+        right: 5px;
+    }
+
+    .footer_last h1 {
+        padding: 0 10px;
+        position: absolute;
+        font-size: 12px;
+        bottom: -85px;
+        text-align: center;
+    }
+}  
